@@ -8,59 +8,58 @@ body {
     background-color: lightslategray;
     color: #333;
     margin: 0;
-    padding: 20px;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 header {
+    width: 100%;
     background-color: #fffdfd;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+
 }
 
 .list {
-    width:70dvh;
-    height: 100dvh;
-  height:auto;
-  background: #95a7c5;
-  display: grid;
-  grid-template-areas: 
-  "aa"
-  "aa"
-  "bb"
-  "bb"
-  "cc"
-  "cc"
-  "dd"
-  "dd"
-  "ee"
-  "ee"
-  "ff"
-  "ff"
-  "gg"
-  "gg"
-  "hh"
-  "hh"
-  "ii"
-  "ii"
-  "jj"
-  "jj";
+    width:100dvh;
+    height:auto;
+    background: #95a7c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-h1 {
+p {
     margin: 0;
+    font-size: 20px;
+}
+
+a {
+    font-size: 36px;
+}
+
+h2{
+    font-size: 34px;
 }
 
 .gallery {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     max-width: 1200px;
     margin: 0 auto;
+    place-content: center;
+
 }
 
 .top10-item {
@@ -68,20 +67,32 @@ h1 {
     border-radius: 100px;
     padding: 10px;
     text-align: center;
+    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .top10-item img {
-    width: auto;
-    height: auto;
-    border-radius: 50000px;
+    width: 100dvw;
+    height: 100dvh;
+    border-radius: 50px;
     margin-bottom: 10px;
+    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .top10-item p {
     margin: 0;
-    color: #4a6fa5;
-    font-size: 14px;
+    color: lightskyblue;
+    font-size: 34px;
     font-family: Arial, sans-serif;
+    place-content: center;
+    display: grid;
 }
 
 footer {
@@ -91,5 +102,23 @@ footer {
     color: white;
     margin-top: 20px;
     flex: 0 0 auto;
+    place-content: center;
+    display: grid;
+    width: 100%;
 }
 
+nav{
+    width: 100%;
+    background-color: #fffdfd;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
