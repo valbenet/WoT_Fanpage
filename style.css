@@ -14,11 +14,12 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 100dvh;
 }
 
 header {
     width: 100%;
-    background-color: #fffdfd;
+    background-color: ivory;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
@@ -26,6 +27,21 @@ header {
     flex-direction: column;
     place-content: center;
 
+}
+
+main{
+    font-family: Arial, sans-serif;
+    background-color: lightslategray;
+    color: #333;
+    margin: 0;
+    display: flex;
+    border-radius: 500px;
+    flex-direction: column;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100dvh;
 }
 
 .list {
@@ -36,12 +52,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 
 p {
     margin: 0;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 a {
@@ -50,6 +67,9 @@ a {
 
 h2{
     font-size: 34px;
+}
+article{
+font-size: 18px;
 }
 
 .gallery {
@@ -63,20 +83,22 @@ h2{
 }
 
 .top10-item {
-    background-color: #95a7c5;
+    background: #95a7c5;
     border-radius: 100px;
     padding: 10px;
+    width: 50dvw;
     text-align: center;
     place-content: center;
     display: flex;
     flex-direction: column;
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
 
 .top10-item img {
-    width: 100dvw;
-    height: 100dvh;
+    width: 50%;
+    height: auto;
     border-radius: 50px;
     margin-bottom: 10px;
     place-content: center;
@@ -88,11 +110,11 @@ h2{
 
 .top10-item p {
     margin: 0;
-    color: lightskyblue;
-    font-size: 34px;
+    color: black;
+    font-size: 40px;
     font-family: Arial, sans-serif;
     place-content: center;
-    display: grid;
+    display: flex;
 }
 
 footer {
@@ -109,7 +131,7 @@ footer {
 
 nav{
     width: 100%;
-    background-color: #fffdfd;
+    background-color: ivory;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
@@ -120,5 +142,5 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2%;
+    gap: 2.5%;
 }
